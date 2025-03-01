@@ -1,5 +1,5 @@
 const User = require('../models/customer');
-const Product = require('../models/product'); // Assuming you are using the same model
+const Product = require('../models/product');
 
 // Combined getStats function
 exports.getStats = async (req, res) => {
@@ -13,7 +13,7 @@ exports.getStats = async (req, res) => {
     // Return all stats in the response
     const stats = {
       users,
-      products,  // Using "products" to match your frontend
+      products,
     };
     
     res.json(stats); // Sending all the stats as a response
